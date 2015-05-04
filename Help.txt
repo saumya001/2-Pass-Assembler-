@@ -1,0 +1,108 @@
+NOT 					X=NOT(Y)
+
+SHIFTL					X=shift Y left by 1 bit
+
+SHIFTR					X=shift Y right by 1 bit
+
+MOV					move content of Y to X
+
+MOVI					move/copy the value rep by 4  bit
+
+LOAD					load content of Y to X
+
+INR					increase X by value given in 4 bit
+
+DCR					decrease X by value given in 4 bit
+
+CMP					compare value of X with Y
+
+PUSH					push X to top of stack
+
+POP					pop top of stack and store in X
+
+CALL					call unconditional X
+
+CZ					call X if zero flag=1
+
+JMP					unconditional jump to X
+
+JC					jump if carry flag=1
+
+JNC					jump if carry flag=0
+
+JPO					jump if parity is odd
+
+JPE					jump if parity is even
+
+JP					jump if sign bit=0
+
+JM					jump if sign bit=1
+
+JZ					jump if zero flag=1
+
+JNZ					jump if zero flag=0
+
+CC					call to add at X if carry flag=1
+
+CNC					call to add at X if carry flag=0
+
+RET					return unconditionally
+
+NOP					no operation
+
+HLT					halt the program
+
+RC					return from sub r to calling if carry=1
+
+RNC				 	if carry=0
+
+RP					if sign=0
+
+RM					if sign=1
+
+RZ					if zero=1
+
+RNZ					if zero=0
+
+RPE					if parity=1
+
+RPO					if parity=0
+
+ADD					X=Y+Z
+
+SUB					X=Y-Z
+
+AND					X=Y AND Z
+
+OR					X=Y OR Z
+
+XOR					X=Y XOR Z
+
+ADDF                                    adds floating point numbers
+
+SUBF                                    subtracts floating point numbers
+
+MUL                                     multiplies two numbers
+
+MULF                                    multiplies two floating point numbers
+
+DIV                                     divides two numbers
+
+DIVF                                    divides two floating point numbers
+
+ROTATER                                 rotate the bits of a number to right by 1-bit
+
+ROTATEL                                 rotate the bits of a number to left by 1-bit
+
+ADI                                     adds a given no. to contents of given register
+
+SUBI                                    subtracts a given no. to contents of given register
+					
+CALLOV                                  calls a subroutine at address given in X if overflow
+
+JUMPOV                                  jumps to address given in X if overflow
+
+EI                                      enables interrupt 
+
+DI                                      disables interrupt
+			
